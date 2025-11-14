@@ -98,6 +98,5 @@ carro menu(int o)
             default:
                 cout << "Opcao invalida. Tente novamente." << endl;
         }
-
     return Carro;
 }
