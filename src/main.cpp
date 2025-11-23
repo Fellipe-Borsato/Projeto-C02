@@ -75,8 +75,26 @@ int main() {
         }
 
     } while (opcao != 6);
+    
+    string carroFinal[5];
+
+	carroFinal[0] = "Cor: " + Carro.cor;
+	carroFinal[1] = "Interior: " + Carro.interior;
+	carroFinal[2] = "Rodas: " + Carro.rodas;
+	carroFinal[3] = "Carroceria: " + Carro.carroceria;
+	carroFinal[4] = "Motor: " + Carro.motor;
+
+
+	cout << "\n===== CARRO ESCOLHIDO =====" << endl;
+
+	for (int i = 0;i< 5;i++) {
+    cout << carroFinal[i] << endl;
+	}
+
+	cout << "=============================" << endl;
 
     abrirImagem(Carro.cor, Carro.rodas, Carro.carroceria);
 
     return 0;
 }
+
